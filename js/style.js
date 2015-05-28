@@ -15,3 +15,13 @@ Array.prototype.memory_platte_slump = function(){
         this[i] = temp;
     }
 }
+
+function nyttSpel(){
+    plattor_flippade = 0;
+    var output = '';
+    memory_array.memory_platte_slump();
+    for(var i = 0; i < memory_array.length; i++){
+        output += '<div id="platta_'+i+'" onclick="memoryFlippaPlatta(this,\''+memory_array[i]+'\')"></div>';
+    }
+    document.getElementById('spelplan').innerHTML = output;
+}
