@@ -43,7 +43,7 @@ function flippaPlattor(platta,val){
                 memory_platte_ids = [];
                 // Kolla om hela brädet är rensat
                 if(plattor_flippade == memory_array.length){
-                    alert("Bräde rensat... skapar nytt spel!");
+                    alert("GRATTIS!! Bräde rensat... skapar nytt spel!");
                     document.getElementById('spelplan').innerHTML = "";
                     nyttSpel();
                 }
